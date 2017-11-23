@@ -6,11 +6,11 @@
 
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>servlets.LoginServlet</servlet-class>
+        <servlet-class>StudentForm.servlets.LoginServlet</servlet-class>
     </servlet>
 
-    <!-- servlet-mapping>
+    <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
-        <url-pattern>/loginServlet</url-pattern>
-    </servlet-mapping-->
+        <url-pattern>/jsp/loginServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
