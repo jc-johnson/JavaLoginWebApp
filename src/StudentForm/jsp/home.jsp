@@ -1,32 +1,22 @@
 <html>
 <head>
-    HOME
+<title>Home Page</title>
 </head>
 
 <body>
     <table style="width:100%">
         <tr>
             <th>
-                <form action="http://google.com">
-                    <input type="submit" value="Continue" />
+                <form action="addStudent.jsp">
+                    <input type="submit" value="Add Student to Database" />
                 </form>
              </th>
             <th></th>
             <th>
-                <form action="http://google.com">
-                    <input type="submit" value="Continue" />
+                <form action="viewStudents.jsp">
+                    <input type="submit" value="View Current Students" />
                 </form>
             </th>
-        </tr>
-        <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-        </tr>
-        <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
         </tr>
     </table>
 </body>
