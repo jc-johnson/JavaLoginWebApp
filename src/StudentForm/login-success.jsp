@@ -6,6 +6,7 @@
     out.print("Welcome, " + bean.getName());
 %>
 
-<form action="http://google.com">
+
+<form action="jsp/home.jsp">
     <input type="submit" value="Continue" />
 </form>
