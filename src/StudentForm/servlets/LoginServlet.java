@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-// @WebServlet("/jsp/loginServlet")
 public class LoginServlet extends HttpServlet {
 
     @Override
