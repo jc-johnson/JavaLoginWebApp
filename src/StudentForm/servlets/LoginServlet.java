@@ -32,12 +32,12 @@ public class LoginServlet extends HttpServlet {
         boolean status = bean.validate();
 
         if(status){
-            RequestDispatcher rd = request.getRequestDispatcher("/jsp/login-success.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("login-success.jsp");
             rd.forward(request, response);
             // MySqlDBUtil.writeToSecurityDB(name, password);
         }
         else{
-            RequestDispatcher rd = request.getRequestDispatcher("/jsp/login-error.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("login-error.jsp");
             rd.forward(request, response);
         }
 
