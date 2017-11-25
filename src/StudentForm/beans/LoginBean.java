@@ -4,8 +4,6 @@ public class LoginBean {
 
     private String name,password;
 
-    private String test;
-
     public String getName() {
         return name;
     }
