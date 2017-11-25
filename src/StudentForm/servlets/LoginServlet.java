@@ -20,20 +20,19 @@ public class LoginServlet extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
-        String name = request.getParameter("username");
+        String name = request.getParameter("name");
         String password = request.getParameter("password");
 
         LoginBean bean = new LoginBean();
         bean.setName(name);
         bean.setPassword(password);
-        request.setAttribute("bean",bean);
+        request.setAttribute("bean", bean);
 
         boolean status = bean.validate();
 
         if(status){
             RequestDispatcher rd = request.getRequestDispatcher("login-success.jsp");
             rd.forward(request, response);
-            // MySqlDBUtil.writeToSecurityDB(name, password);
         }
         else{
             RequestDispatcher rd = request.getRequestDispatcher("login-error.jsp");

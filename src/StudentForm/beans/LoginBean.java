@@ -2,7 +2,7 @@ package StudentForm.beans;
 
 public class LoginBean {
 
-    private String name,password;
+    private String name, password;
 
     public String getName() {
         return name;
