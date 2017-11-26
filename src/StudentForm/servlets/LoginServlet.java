@@ -38,7 +38,6 @@ public class LoginServlet extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher("login-error.jsp");
             rd.forward(request, response);
         }
-
     }
 
     @Override

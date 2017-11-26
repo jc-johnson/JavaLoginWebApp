@@ -5,7 +5,7 @@
 
     <body>
         <h1>Add a New Student</h1> </br>
-        <form name="studentSubmitForm" method="post" action="bstudentServlet">
+        <form name="studentSubmitForm" method="post" action="../studentServlet">
             First Name: <input type="text" name="firstName"/> <br/>
             Last Name: <input type="text" name="lastName"/> <br/>
             Address: <input type="text" name="address"/> <br/>

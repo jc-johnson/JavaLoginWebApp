@@ -3,6 +3,7 @@ package StudentForm.servlets;
 import StudentForm.beans.LoginBean;
 import StudentForm.beans.StudentBean;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -31,6 +32,17 @@ public class StudentServlet extends HttpServlet {
         studentBean.setSex(sex);
 
         request.setAttribute("bean", studentBean);
+
+        boolean status = true;
+
+        if(status){
+            RequestDispatcher rd = request.getRequestDispatcher("studentForm-Success.jsp");
+            rd.forward(request, response);
+        }
+        else{
+            RequestDispatcher rd = request.getRequestDispatcher("studentForm-Error.jsp");
+            rd.forward(request, response);
+        }
 
     }
 
