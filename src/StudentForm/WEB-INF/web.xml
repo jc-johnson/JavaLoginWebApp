@@ -22,6 +22,6 @@
 
     <servlet-mapping>
         <servlet-name>StudentServlet</servlet-name>
-        <url-pattern>/jsp/studentServlet</url-pattern>
+        <url-pattern>/studentServlet</url-pattern>
     </servlet-mapping>
 </web-app>
