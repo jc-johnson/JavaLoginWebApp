@@ -16,6 +16,8 @@ public class StudentServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        response.setContentType("text/html");
+
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
         String address = request.getParameter("address");
