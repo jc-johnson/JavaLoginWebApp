@@ -1,0 +1,7 @@
+https://stackoverflow.com/questions/7535629/tomcat-jsp-servlet-web-xml-issue
+
+Helpful reference
+
+The servlet class declaration in web.xml is wrong. You're put ControllerServlet in a package test. So the proper servlet class declaration should be:
+
+<servlet-class>test.ControllerServlet</servlet-class>
