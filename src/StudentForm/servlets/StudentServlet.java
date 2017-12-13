@@ -38,11 +38,11 @@ public class StudentServlet extends HttpServlet {
         boolean status = true;
 
         if(status){
-            RequestDispatcher rd = request.getRequestDispatcher("studentForm-Success.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("/jsp/studentForm-Success.jsp");
             rd.forward(request, response);
         }
         else{
-            RequestDispatcher rd = request.getRequestDispatcher("studentForm-Error.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("/jsp/studentForm-Error.jsp");
             rd.forward(request, response);
         }
 

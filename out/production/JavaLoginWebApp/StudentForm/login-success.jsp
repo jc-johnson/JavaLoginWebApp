@@ -1,4 +1,4 @@
-<%@page import="beans.LoginBean"%>
+<%@page import="StudentForm.beans.LoginBean"%>
 
 <p> You are successfully logged in! </p>
 <%
