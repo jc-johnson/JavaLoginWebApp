@@ -1,0 +1,4 @@
+INSERT INTO student VALUES (110, 'Bryce',
+	'Myers', '12343 lovers lane', '7788888888', 'Neil Armstrong', 'M');
+
+SELECT * FROM test.student;
