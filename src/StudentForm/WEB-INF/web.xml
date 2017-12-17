@@ -24,4 +24,14 @@
         <servlet-name>StudentServlet</servlet-name>
         <url-pattern>/studentServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewStudentServlet</servlet-name>
+        <servlet-class>StudentForm.servlets.ViewStudentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ViewStudentServlet</servlet-name>
+        <url-pattern>/viewStudentServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
