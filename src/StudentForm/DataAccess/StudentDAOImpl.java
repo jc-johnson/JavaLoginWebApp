@@ -53,12 +53,16 @@ public class StudentDAOImpl implements StudentDAO {
 
     }
 
+    public void addStudent(StudentBean studentBean) {
+
+    }
+
     @Override
     public StudentBean get(int studentId) {
 
         Connection connection = initialize();
         Statement statement = null;
-        StudentBean studentBean = null;
+        StudentBean studentBean = new StudentBean();
 
         if (connection != null) {
             System.out.println("Creating statement...");
@@ -66,7 +70,7 @@ public class StudentDAOImpl implements StudentDAO {
             try {
                 statement = connection.createStatement();
                 String sqlQuery;
-                sqlQuery = "SELECT idStudent FROM Student";
+                sqlQuery = "SELECT * FROM Student";
                 ResultSet resultSet = statement.executeQuery(sqlQuery);
 
                 //Extract data from result set
